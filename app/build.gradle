@@ -1,0 +1,58 @@
+import java.util.Properties
+
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+// Lee las propiedades del archivo local.properties
+Properties properties = new Properties()
+if (rootProject.file("local.properties").exists()) {
+    properties.load(rootProject.file("local.properties").newDataInputStream())
+}
+
+android {
+    namespace 'com.example.apptiempo'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "com.example.apptiempo"
+        minSdk 26
+        targetSdk 36
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // Obtiene la clave de API del archivo local.properties
+        def weatherApiKey = properties.getProperty("WEATHER_API_KEY", "")
+        // Expone la clave de API como un String válido en BuildConfig
+        buildConfigField "String", "WEATHER_API_KEY", "\"${weatherApiKey}\""
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+}
+
+dependencies {
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation libs.retrofit
+    implementation libs.converter.gson
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}
