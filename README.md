@@ -9,32 +9,52 @@ AppTiempo es una aplicación Android nativa que permite a los usuarios consultar
 <img src="app/src/main/java/com/example/apptiempo/utils/capturas/captura3.png"  width="250">
 
 ## ✨ Características Principales
+
 **•	Búsqueda de Tiempo por Ciudad:** Introduce el nombre de una ciudad para obtener datos meteorológicos al instante.
+
 **•	Tiempo Actual:** Muestra la temperatura actual y la condición principal del tiempo (soleado, nublado, etc.).
+
 **•	Pronóstico Extendido:** Presenta un pronóstico detallado para las próximas horas/días en una lista deslizable.
+
 **•	Interfaz Moderna:** Utiliza el modo Edge-to-Edge para una experiencia de usuario inmersiva que aprovecha toda la pantalla.
+
 **•	Gestión de Errores:** Informa al usuario si la ciudad no es encontrada o si ocurre un problema de conexión.
+
 **•	Iconos Personalizados:** Utiliza iconos vectoriales para representar las diferentes condiciones del tiempo y un icono de aplicación adaptativo.
 
 ## 🛠️ Tecnologías y Librerías
 Este proyecto aprovecha un stack de tecnologías modernas recomendadas para el desarrollo de Android.
+
 **•	Lenguaje:** Java
+
 **•	Arquitectura:** MVVM (Model-View-ViewModel). La arquitectura separa la lógica de la interfaz de usuario de la lógica de negocio, lo que resulta en un código más limpio, escalable y fácil de mantener.
+
 **o	View:** MainActivity (observa los datos y actualiza la UI).
+
 **o	ViewModel:** MainViewModel (expone los datos a la UI y sobrevive a los cambios de configuración).
+
 **o	Model:** WeatherRepository (gestiona el origen de los datos, en este caso, la red).
+
 **•	Componentes de Android Jetpack:**
+
 **o	Lifecycle (ViewModel & LiveData):** Para crear componentes de UI que reaccionan a los cambios en los datos y son conscientes de su ciclo de vida.
+
 **o	RecyclerView:** Para mostrar la lista del pronóstico de manera eficiente.
+
 **o	Activity & AppCompat:** Para la compatibilidad con versiones anteriores de Android.
 
 ## •	Red (Networking):
+
 **o	Retrofit:** Un cliente HTTP para Android y Java, utilizado para realizar las llamadas a la API de forma declarativa.
+
 **o	Gson:** Para convertir automáticamente las respuestas JSON de la API en objetos Java (POJOs).
+
 **•	Gestión de Dependencias:** Gradle con Version Catalogs (libs.versions.toml), lo que centraliza y simplifica la gestión de las versiones de las librerías.
+
 **•	API Externa:** OpenWeatherMap API para obtener los datos meteorológicos.
 
 ## 📂 Estructura del Proyecto
+
 El código está organizado en paquetes siguiendo la arquitectura MVVM para una clara separación de responsabilidades:
 
 app/
@@ -80,3 +100,9 @@ WEATHER_API_KEY=”TU_API_KEY_AQUI”
 o	Abre el proyecto en Android Studio.
 o	Sincroniza el proyecto con Gradle.
 o	Ejecuta la aplicación en un emulador o en un dispositivo físico.
+
+
+## Autor
+
+- [RobMatter](https:/https://github.com/RobMatter/)
+
