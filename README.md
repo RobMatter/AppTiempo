@@ -74,6 +74,7 @@ Para proteger la clave de la API de OpenWeatherMap y evitar que sea expuesta en 
 
 ## 🚀 Cómo Empezar
 Para compilar y ejecutar el proyecto en tu propia máquina, sigue estos pasos:
+
 **1.	Clona el repositorio:**
     git clone https://github.com/tu-usuario/AppTiempo.git
     
