@@ -27,7 +27,8 @@ Este proyecto aprovecha un stack de tecnologías modernas recomendadas para el d
 
 **•	Lenguaje:** Java
 
-**•	Arquitectura:** MVVM (Model-View-ViewModel). La arquitectura separa la lógica de la interfaz de usuario de la lógica de negocio, lo que resulta en un código más limpio, escalable y fácil de mantener.
+## •	Arquitectura: MVVM (Model-View-ViewModel)
+La arquitectura separa la lógica de la interfaz de usuario de la lógica de negocio, lo que resulta en un código más limpio, escalable y fácil de mantener.
 
 **o	View:** MainActivity (observa los datos y actualiza la UI).
 
@@ -35,7 +36,7 @@ Este proyecto aprovecha un stack de tecnologías modernas recomendadas para el d
 
 **o	Model:** WeatherRepository (gestiona el origen de los datos, en este caso, la red).
 
-**•	Componentes de Android Jetpack:**
+## •	Componentes de Android Jetpack:
 
 **o	Lifecycle (ViewModel & LiveData):** Para crear componentes de UI que reaccionan a los cambios en los datos y son conscientes de su ciclo de vida.
 
