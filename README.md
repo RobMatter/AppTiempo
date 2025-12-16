@@ -58,19 +58,8 @@ La arquitectura separa la lógica de la interfaz de usuario de la lógica de neg
 
 El código está organizado en paquetes siguiendo la arquitectura MVVM para una clara separación de responsabilidades:
 
-app/
- ├── java/com/example/apptiempo/
- │
- ├── data/                  # Capa de datos
- │    ├── model/            # Clases de modelo (POJOs) para la respuesta de la API.
- │    ├── network/          # Configuración de Retrofit (ApiClient, ApiService).
- │    └── repository/       # Repositorio que gestiona el origen de los datos.
- │
- ├── ui/                    # Capa de presentación (UI)
- │    ├── adapter/          # Adaptadores para RecyclerViews (ForecastAdapter).
- │    └── main/             # Clases relacionadas con la pantalla principal (MainActivity, MainViewModel).
- │
- └── utils/                 # Clases de utilidad (Resource.java).
+<img width="891" height="357" alt="image" src="https://github.com/user-attachments/assets/9257d259-8659-4763-bf4f-36ddb44366b6" />
+
 
 
 
