@@ -66,6 +66,7 @@ El código está organizado en paquetes siguiendo la arquitectura MVVM para una 
 
 ## 🔒 Seguridad de la API Key
 Para proteger la clave de la API de OpenWeatherMap y evitar que sea expuesta en el repositorio de GitHub, el proyecto implementa la siguiente estrategia de seguridad:
+
 1.	La clave de la API se almacena en el archivo local.properties, que está incluido en .gitignore para no ser subido al control de versiones.
 2.	El archivo app/build.gradle lee la clave desde local.properties durante el proceso de compilación.
 3.	La clave se inyecta de forma segura en la clase BuildConfig, que se genera automáticamente.
@@ -73,22 +74,29 @@ Para proteger la clave de la API de OpenWeatherMap y evitar que sea expuesta en 
 
 ## 🚀 Cómo Empezar
 Para compilar y ejecutar el proyecto en tu propia máquina, sigue estos pasos:
-1.	Clona el repositorio:
+**1.	Clona el repositorio:**
     git clone https://github.com/tu-usuario/AppTiempo.git
     
-2.	Obtén tu API Key:
+**2.	Obtén tu API Key:**
+
 o	Ve a OpenWeatherMap y regístrate para obtener una clave de API gratuita.
 
-3.	Crea el archivo local.properties:
+**3.	Crea el archivo local.properties:**
+
 o	En la carpeta raíz de tu proyecto, crea un nuevo archivo llamado local.properties.
 
-4.	Añade tu API Key:
-o	Dentro de local.properties, añade la siguiente línea, reemplazando TU_API_KEY_AQUI con la clave que obtuviste:
-WEATHER_API_KEY=”TU_API_KEY_AQUI”
+**4.	Añade tu API Key:**
 
-5.	Abre y ejecuta en Android Studio:
+o	Dentro de local.properties, añade la siguiente línea, reemplazando TU_API_KEY_AQUI con la clave que obtuviste:
+
+    WEATHER_API_KEY=”TU_API_KEY_AQUI”
+
+**5.	Abre y ejecuta en Android Studio:**
+
 o	Abre el proyecto en Android Studio.
+
 o	Sincroniza el proyecto con Gradle.
+
 o	Ejecuta la aplicación en un emulador o en un dispositivo físico.
 
 
